@@ -95,4 +95,7 @@ predictions = model.predict(test_text)
 
 # prints the accuracy of the model
 accuracy = metrics.accuracy_score(test_labels, predictions)
+print(f"Total positive/negative reviews: {len_all_files}")
+print(f"Total positive/negative training reviews: {len_training}")
+print(f"Total positive/negative test reviews: {len_test}")
 print(f"Accuracy on the test set: {accuracy}")
